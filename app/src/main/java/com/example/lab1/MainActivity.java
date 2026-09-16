@@ -1,5 +1,6 @@
 package com.example.lab1;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view) {
         TextView text = (TextView) findViewById(R.id.textView);
         text.setText ("Button clicked");
+    }
+
+    public void onButton(View view) {
+        TextView text = (TextView) findViewById(R.id.textView);
+        text.setTextColor(Color.parseColor("#0F9D58"));
     }
 }
