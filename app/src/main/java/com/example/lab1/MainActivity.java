@@ -41,5 +41,3 @@ public class MainActivity extends AppCompatActivity {
         l.setBackgroundColor(Color.parseColor("#8ebe86"));
     }
 }
-
-//Code
