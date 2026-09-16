@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -33,5 +34,10 @@ public class MainActivity extends AppCompatActivity {
     public void onButton(View view) {
         TextView text = (TextView) findViewById(R.id.textView);
         text.setTextColor(Color.parseColor("#0F9D58"));
+    }
+
+    public void Background(View view) {
+        ConstraintLayout l = (ConstraintLayout) findViewById(R.id.main);
+        l.setBackgroundColor(Color.parseColor("#8ebe86"));
     }
 }
